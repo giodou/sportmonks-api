@@ -20,10 +20,7 @@ async function getInPlayLivescores(includes) {
 
     const options = {
         method: 'GET',
-        url: `${process.env.API_BASE_URL}/livescores/now
-        ?tz=${process.env.TIMEZONE}
-        &api_token=${process.env.SPORTMONKS_API_TOKEN}
-        ${includeOptions}`,
+        url: `${process.env.API_BASE_URL}/livescores/now?api_token=${process.env.SPORTMONKS_API_TOKEN}${includeOptions}`,
     };
 
     try {
